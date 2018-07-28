@@ -48,7 +48,7 @@
 	<!--<link rel="stylesheet" href="css/color/color8.css">-->
 </head>
 
-<body>
+<body onload="init()">
 
 	<!-- Book Preloader -->
 	<div class="book_preload">
@@ -149,7 +149,7 @@
 										</a>
 										<ul class="dropdown">
 											<li>
-												<a href="mycourses.html">Lecture List</a>
+												<a href="mylectures.html">Lecture List</a>
 											</li>
 											<li>
 												<a href="portpolios.html">Portfolios</a>
@@ -177,193 +177,189 @@
 	</header>
 	<!-- End Header -->
 
-	<!-- Slider Area -->
-	<section class="home-slider">
-		<div class="slider-active">
-			<!-- Single Slider -->
-			<div class="single-slider overlay" style="background-image:url('https://www.brainscape.com/blog/wp-content/uploads/2011/08/o-TEEN-STUDYING-LATE-facebook.jpg')"
-			 data-stellar-background-ratio="0.5">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-8 col-md-8 col-12">
-							<div class="slider-text">
-								<h1>Perfect Courses to be an
-									<span>Expert</span> in your field</h1>
-								<p>Our mission is to empower clients, colleagues, and communities to achieve aspirations while building lasting, caring
-									relationships.</p>
-								<div class="button">
-									<a href="courses.html" class="btn primary">What to Learn</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!--/ End Single Slider -->
-			<!-- Single Slider -->
-			<div class="single-slider overlay" style="background-image:url('https://cdn-images-1.medium.com/max/1000/1*zTYrUVqltB-pUv_w8s_HAA.jpeg')"
-			 data-stellar-background-ratio="0.5">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-8 offset-lg-2 col-md-8 offset-md-2 col-12">
-							<div class="slider-text text-center">
-								<h1>Learn A to Z about
-									<span>Computer Science</span> & Applications</h1>
-								<p>Our mission is to empower clients, colleagues, and communities to achieve aspirations while building lasting, caring
-									relationships.</p>
-								<div class="button">
-									<a href="courses.html" class="btn primary">What to Learn</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!--/ End Single Slider -->
-		</div>
-	</section>
-	<!--/ End Slider Area -->
-
-	<!-- Events -->
-	<section class="events section">
+	<!-- Start Breadcrumbs -->
+	<section class="breadcrumbs overlay">
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
-					<div class="section-title">
-						<h2>Recommended
-							<span>Courses</span>
-						</h2>
-						<p>Look around gorgeous classes that we prepared for you. Choose what to learn & to be expert about it.</p>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-12">
-					<div class="event-slider">
-						<!-- Single Event -->
-						<div class="single-event">
-							<div class="head overlay">
-								<img src="http://www.gemius.lv/files/LV/online-winkelen.jpg" alt="#">
-							</div>
-							<div class="event-content">
-								<div class="meta">
-									<span>
-										<i class="fa fa-clock-o"></i>6 months</span>
-									<span>
-										<i class="fa fa-list"></i>Beginner</span>
-								</div>
-								<h4>
-									<a href="course-single.html">Shopping Mall Making</a>
-								</h4>
-								<p>You’ll learn the skills and techniques used by shopping mall develope teams at the most advanced online shopping
-									mall in the world.</p>
-								<div class="button">
-									<a href="course-single.html" class="btn">Attend Course</a>
-								</div>
-							</div>
-						</div>
-						<!-- Single Event -->
-						<div class="single-event">
-							<div class="head overlay">
-								<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png" width="800"
-								 height="550" alt="#"> </div>
-							<div class="event-content">
-								<div class="meta">
-									<span>
-										<i class="fa fa-clock-o"></i>4 weeks</span>
-									<span>
-										<i class="fa fa-list"></i>Intermediate</span>
-								</div>
-								<h4>
-									<a href="course-single.html">How to use Node.js</a>
-								</h4>
-								<p>Let's learn about an open sourse server environment & asynchronous programming ! </p>
-								<div class="button">
-									<a href="course-single.html" class="btn">Attend Course</a>
-								</div>
-							</div>
-						</div>
-						<!--/ End Single Event -->
-						<!-- Single Event -->
-						<div class="single-event">
-							<div class="head overlay">
-								<img src="https://www.pmvmiddleeast.com/sites/default/files/pmv/styles/full_img/public/images/2018/01/31/Ford-autonomous-web_0.jpg?itok=w537nhKz"
-								 alt="#"> </div>
-							<div class="event-content">
-								<div class="meta">
-									<span>
-										<i class="fa fa-clock-o"></i>6 months</span>
-									<span>
-										<i class="fa fa-list"></i>Expert</span>
-								</div>
-								<div class="title">
-									<h4>
-										<a href="course-single.html">Making own Self-Driving Cars</a>
-									</h4>
-									<p>You’ll learn the skills and techniques used by self-driving car teams at the most advanced technology companies
-										in the world.</p>
-								</div>
-								<div class="button">
-									<a href="course-single.html" class="btn">Attend Course</a>
-								</div>
-							</div>
-						</div>
-						<!--/ End Single Event -->
-					</div>
+					<h2>Course Pages</h2>
+					<ul class="bread-list">
+						<li>
+							<a href="index.html">Home
+								<i class="fa fa-angle-right"></i>
+							</a>
+						</li>
+						<li class="active">
+							<a href="course-single.html">Course Single</a>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</div>
 	</section>
-	<!--/ End Events -->
+	<!--/ End Breadcrumbs -->
 
-	<!-- Fun Facts -->
-	<div class="fun-facts overlay" data-stellar-background-ratio="0.5">
+	<!-- Courses -->
+	<section class="courses single section">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-3 col-md-6 col-6">
-					<!-- Single Fact -->
-					<div class="single-fact">
-						<i class="fa fa-institution"></i>
-						<div class="number">
-							<span class="counter">80</span>k+</div>
-						<p>Active Cources</p>
+				<div class="col-12">
+					<div class="single-main">
+						<div class="row">
+							<div class="col-lg-8 col-12">
+								<!-- Single Course -->
+								<div class="single-course">
+									<div class="embed-responsive embed-responsive-16by9">
+										<iframe width="560" height="315" src="https://www.youtube.com/embed/ASembYjMPek" frameborder="0" allow="autoplay; encrypted-media"
+										 allowfullscreen></iframe>
+									</div>
+								</div>
+								<!--/ End Single Course -->
+							</div>
+							<div class="col-lg-4 col-12">
+								<!-- Course Features -->
+								<div class="course-feature">
+									<div class="feature-main">
+										<h4>Course Features</h4>
+										<!-- Single Feature -->
+										<div class="single-feature">
+											<i class="fa fa-files-o"></i>
+											<span class="label">Lectures</span>
+											<span class="value">50</span>
+										</div>
+										<!--/ End Single Feature -->
+										<!-- Single Feature -->
+										<div class="single-feature">
+											<i class="fa fa-puzzle-piece"></i>
+											<span class="label">Quizzes</span>
+											<span class="value">5</span>
+										</div>
+										<!--/ End Single Feature -->
+										<!-- Single Feature -->
+										<div class="single-feature">
+											<i class="fa fa-clock-o"></i>
+											<span class="label">Duration</span>
+											<span class="value">6 Months</span>
+										</div>
+										<!--/ End Single Feature -->
+										<!-- Single Feature -->
+										<div class="single-feature">
+											<i class="fa fa-magic"></i>
+											<span class="label">Skill Level</span>
+											<span class="value">Beginner</span>
+										</div>
+										<!--/ End Single Feature -->
+										<!-- Single Feature -->
+										<div class="single-feature">
+											<i class="fa fa-user"></i>
+											<span class="label">Students</span>
+											<span class="value">50</span>
+										</div>
+										<!--/ End Single Feature -->
+										<!-- Single Feature -->
+										<div class="single-feature">
+											<i class="fa fa-check-square-o"></i>
+											<span class="label">Certificate</span>
+											<span class="value">No</span>
+										</div>
+										<!--/ End Single Feature -->
+										<!-- Single Feature -->
+										<div class="single-feature">
+											<i class="fa fa-check-square-o"></i>
+											<span class="label">Assessments</span>
+											<span class="value">Yes</span>
+										</div>
+										<!--/ End Single Feature -->
+									</div>
+								</div>
+								<!--/ End Course Features -->
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-12">
+								<!-- Course Meta -->
+								<div class="course-meta">
+									<!-- Course Info -->
+									<div class="course-info">
+										<div class="single-info author">
+											<h4>Teacher:
+												<a href="#">
+													<span>JinGyu Choi</span>
+												</a>
+											</h4>
+										</div>
+										<div class="single-info category">
+											<i class="fa fa-bolt"></i>
+											<h4>Category
+												<a href="#">
+													<span>Applications</span>
+												</a>
+											</h4>
+										</div>
+										<div class="single-info s-enroll">
+											<i class="fa fa-users"></i>
+											<h4>Enrolled:
+												<span>36 Student Enrolled</span>
+											</h4>
+										</div>
+										<div class="single-info rattings">
+											<i class="fa fa-clock-o"></i>
+											<h4>Course Time:
+												<span>6 months</span>
+											</h4>
+										</div>
+									</div>
+									<!--/ End Course Info -->
+									<!-- Course Price -->
+									<div class="course-price">
+										<p>$240</p>
+										<a href="#" class="btn">
+											<i class="fa fa-users"></i>Enroll Now</a>
+									</div>
+									<!--/ End Course Price -->
+								</div>
+								<!--/ End Course Meta -->
+							</div>
+							<div class="col-12">
+								<div class="content">
+									<h2>
+										<a href="#">Making own Online Shopping Mall</a>
+									</h2>
+									<p>Building an online store is a fantastic way to make a bit of extra money. But it’s difficult to know where to start.</p>
+									<p>With the development of internet technology, network service plays an increasingly important role in people’s daily
+										life. This project will make you to build other kinds of website as well as online shopping mall. You’ll learn
+										the skills and techniques used by shopping mall develope teams at the most advanced online shopping mall in the
+										world.</p>
+								</div>
+							</div>
+							<div class="col-12">
+								<div class="course-required">
+									<h4>What We'll learn in this course</h4>
+									<ul>
+										<li>
+											<span>01</span>Sign in & Log-In</li>
+										<li>
+											<span>02</span>Product Purchasement</li>
+										<li>
+											<span>03</span>Product Management</li>
+										<li>
+											<span>04</span>Product Searching</li>
+										<li>
+											<span>05</span>Product Recommendations</li>
+									</ul>
+								</div>
+								<div id="sample">
+									<img src="images/Online_Store.png" alt="#">
+									<div id="myDiagramDiv_serpentine" style="border: solid 1px white; width:70%; height:300px; margin:auto;"></div>
+								</div>
+							</div>
+						</div>
 					</div>
-					<!--/ End Single Fact -->
-				</div>
-				<div class="col-lg-3 col-md-6 col-6">
-					<!-- Single Fact -->
-					<div class="single-fact">
-						<i class="fa fa-graduation-cap"></i>
-						<div class="number">
-							<span class="counter">33</span>k+</div>
-						<p>Active Students</p>
-					</div>
-					<!--/ End Single Fact -->
-				</div>
-				<div class="col-lg-3 col-md-6 col-6">
-					<!-- Single Fact -->
-					<div class="single-fact">
-						<i class="fa fa-video-camera"></i>
-						<div class="number">
-							<span class="counter">278</span>+</div>
-						<p>Video Cources</p>
-					</div>
-					<!--/ End Single Fact -->
-				</div>
-				<div class="col-lg-3 col-md-6 col-6">
-					<!-- Single Fact -->
-					<div class="single-fact">
-						<i class="fa fa-trophy"></i>
-						<div class="number">
-							<span class="counter">308</span>+</div>
-						<p>Awards Won</p>
-					</div>
-					<!--/ End Single Fact -->
 				</div>
 			</div>
 		</div>
-	</div>
-	<!--/ End Fun Facts -->
+	</section>
+	<!--/ End Courses -->
 
 	<!-- Footer -->
 	<footer class="footer overlay section">
@@ -455,7 +451,7 @@
 								</div>
 							</div>
 						</div>
-						<!--/ End Newsletter -->
+						<<<<<<< HEAD <!--/ End Newsletter -->
 					</div>
 					<!-- End Footer -->
 				</div>
@@ -463,10 +459,89 @@
 		</div>
 	</footer>
 
+	=======
+	</div>
+	</div>
+	</div>
+	</footer>
+	<script id="code">
 
+
+		function init() {
+			// 이거필요
+			var $ = go.GraphObject.make;
+			myDiagram_serpentine =
+				$(go.Diagram, "myDiagramDiv_serpentine",  // create a Diagram for the DIV HTML element
+					{
+						initialContentAlignment: go.Spot.Center,
+						isTreePathToChildren: false,  // links go from child to parent
+						layout: $(SerpentineLayout),  // defined in SerpentineLayout.js
+						"draggingTool.dragsTree": false,  // dragging for both move and copy
+						"undoManager.isEnabled": false,  // enable undo & redo
+						"commandHandler.deletesTree": false, // for the delete command
+
+
+
+					});
+			myDiagram_serpentine.nodeTemplate =
+				$(go.Node, go.Panel.Auto,
+					$(go.Shape, { figure: "RoundedRectangle", fill: "white" },
+						new go.Binding("fill", "color")),
+					$(go.TextBlock, { margin: 4 },
+						new go.Binding("text", "key")));
+			myDiagram_serpentine.linkTemplate =
+				$(go.Link, go.Link.Orthogonal,
+					{ corner: 5 },
+					$(go.Shape),
+					$(go.Shape, { toArrow: "Standard" }));
+			var model = new go.TreeModel();
+			model.nodeParentKeyProperty = "next";
+			model.nodeDataArray = [
+				{ key: "Start", next: "Sign Up", color: "coral" },
+				{ key: "Sign Up", next: "Log-in", color: "tomato" },
+				{ key: "Log-in", next: "Product Purchasement", color: "goldenrod" },
+				{ key: "Product Purchasement", next: "Product Management", color: "orange" },
+				{ key: "Product Management", next: "Product Searching", color: "coral" },
+				{ key: "Product Searching", next: "Product Recommendations	", color: "tomato" },
+				/* { key: "Eta", next: "Theta", color: "goldenrod" },
+				{ key: "Theta", next: "Iota", color: "orange" },
+				{ key: "Iota", next: "Kappa", color: "coral" },
+				{ key: "Kappa", next: "Lambda", color: "tomato" },
+				{ key: "Lambda", next: "Mu", color: "goldenrod" },
+				{ key: "Mu", next: "Nu", color: "orange" },
+				{ key: "Nu", next: "Xi", color: "coral" },
+				{ key: "Xi", next: "Omicron", color: "tomato" },
+				{ key: "Omicron", next: "Pi", color: "goldenrod" },
+				{ key: "Pi", next: "Rho", color: "orange" },
+				{ key: "Rho", next: "Sigma", color: "coral" },
+				{ key: "Sigma", next: "Tau", color: "tomato" },
+				{ key: "Tau", next: "Upsilon", color: "goldenrod" },
+				{ key: "Upsilon", next: "Phi", color: "orange" },
+				{ key: "Phi", next: "Chi", color: "coral" },
+				{ key: "Chi", next: "Psi", color: "tomato" },
+				{ key: "Psi", next: "Omega", color: "goldenrod" },
+				{ key: "Omega", color: "orange" }*/
+			];
+			myDiagram_serpentine.model = model;
+		}
+		// 이거필요
+		function spotConverter(dir, from) {
+			if (dir === "left") {
+				return (from ? go.Spot.Left : go.Spot.Right);
+			} else {
+				return (from ? go.Spot.Right : go.Spot.Left);
+			}
+		}
+
+	</script>
+	<!-- End Footer -->
+
+	>>>>>>> ab530dfb8817d804f8f2b7df30d31390587c2df2
 	<!-- Jquery JS-->
 	<script src="js/jquery.min.js"></script>
 	<script src="js/jquery-migrate.min.js"></script>
+	<script src="go.js"></script>
+	<script src="SerpentineLayout.js"></script>
 	<!-- Popper JS-->
 	<script src="js/popper.min.js"></script>
 	<!-- Bootstrap JS-->
