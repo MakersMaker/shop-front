@@ -10,7 +10,7 @@
 	<meta name='copyright' content=''>
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<!-- Title -->
-	<title>MakersMaker &minus; Online Education Platform for Programmers</title>
+	<title>MakesMaker &minus; Online Education Platform for Programmers</title>
 	<!-- Favicon -->
 	<link rel="icon" type="image/png" href="images/favicon.png">
 	<!-- Web Font -->
@@ -47,9 +47,34 @@
 	<!--<link rel="stylesheet" href="css/color/color7.css">-->
 	<!--<link rel="stylesheet" href="css/color/color8.css">-->
 
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+	<script type="text/javascript">
+		google.charts.load('current', { 'packages': ['corechart'] });
+		google.charts.setOnLoadCallback(drawVisualization);
 
+		function drawVisualization() {
+			// Some raw data (not necessarily accurate)
+			var data = google.visualization.arrayToDataTable([
+				['Month', 'Lectures', 'Quizzes', 'GitHub Commit', '1-to-1 tutoring', 'Assignments', 'Average'],
+				['2018/03', 5, 2, 30, 2, 3, 8.4],
+				['2018/04', 15, 5, 17, 4, 4, 9],
+				['2018/05', 10, 7, 14, 3, 6, 8],
+				['2018/06', 20, 12, 19, 5, 5, 12.2],
+				['2018/07', 30, 3, 21, 8, 7, 13.8]
+			]);
 
-	<link rel="stylesheet" href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.css" />
+			var options = {
+				title: 'Lecture attending records for "Making Own Online Shopping Mall" of JinGyu Choi',
+				vAxis: { title: 'Number' },
+				hAxis: { title: 'Month' },
+				seriesType: 'bars',
+				series: { 5: { type: 'line' } }
+			};
+
+			var chart = new google.visualization.ComboChart(document.getElementById('chart_div'));
+			chart.draw(data, options);
+		}
+	</script>
 </head>
 
 <body>
@@ -63,7 +88,6 @@
 		</div>
 	</div>
 	<!--/ End Book Preloader -->
-
 
 	<!-- Header -->
 	<header class="header">
@@ -187,7 +211,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
-					<h2>My Portfolios</h2>
+					<h2>Project Portfolios</h2>
 					<ul class="bread-list">
 						<li>
 							<a href="index.html">Home
@@ -195,7 +219,7 @@
 							</a>
 						</li>
 						<li class="active">
-							<a href="events.html">Portfolios</a>
+							<a href="event-single.html">Project Portfolios</a>
 						</li>
 					</ul>
 				</div>
@@ -205,223 +229,39 @@
 	<!--/ End Breadcrumbs -->
 
 	<!-- Events -->
-	<section class="events archives section">
+	<section class="events single section">
 		<div class="container">
 			<div class="row">
-				<div class="col-12">
-					<br>
-					<div class="calendar">
-						<a href="https://github.com/MunSeongUk">
-							<img src="https://assets-cdn.github.com/images/spinners/octocat-spinner-128.gif" class="spinner" />
-							<p class="spinner-text monospace">Crunching
-								<a href="https://github.com/MunSeongUk">@MunSeongUk</a>'s contributions just for you.</p>
-					</div>
-					</a>
-					<br>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-4 col-md-6 col-12">
-					<!-- Single Event -->
+				<div class="col-lg-12 col-12">
 					<div class="single-event">
-						<div class="head overlay">
-							<img src="https://carimages.com.au/aruhva9DlVOBICsOy70gjuKMT4A=/fit-in/900x480/filters:stretch(FFFFFF)/content/image/f/r/front_2-4b77a8d3efc0b.jpg"
-							 alt="#">
-							<a href="#" class="btn">
-								<i class="fa fa-search"></i>
-							</a>
-						</div>
 						<div class="event-content">
 							<div class="meta">
 								<span>
-									<i class="fa fa-clock-o"></i>6 months</span>
+									<i class="fa fa-clock-o"></i>4 weeks</span>
 								<span>
-									<i class="fa fa-user"></i>Expert</span>
+									<i class="fa fa-user"></i>Beginner</span>
 							</div>
-							<h4>
-								<a href="event-single.html">Making own Self-Driving Cars</a>
-							</h4>
-							<p>I learned the skills and techniques used by self-driving car teams at the most advanced technology companies in the
-								world.
+							<h2>
+								<a href="event-single.html">Making own Online Shopping Mall</a>
+							</h2>
+							<link href="index.css" rel="stylesheet" <p>An online shopping mall system based on Web using HTML5, CSS, JavaScript and Node.js. Click to see whole code for
+							this project in GitHub.</p>
+							<div id="chart_div" style="width: 900px; height: 500px; margin:auto;"></div>
+							<p align="middle">
+								<a href="https://github.com/MakersMaker/shop-front" target="_blank">
+									<img src="images/Online_Store.png" alt="#">
+								</a>
 							</p>
-							<div class="button">
-								<a href="event-single.html" class="btn">See Project Details</a>
-							</div>
+							<p align="middle">
+								<iframe height="450" width="800" src="https://www.youtube.com/embed/ehzOoSMQ8pc"></iframe>
+							</p>
+							<p> littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula There are
+								many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by
+								injected humour, or randomised words Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit
+								litterarum formas humanitatis per seacula There are many variations of passages of Lorem Ipsum available, but the
+								majority have suffered alteration in some form, by injected humours</p>
 						</div>
 					</div>
-					<!--/ End Single Event -->
-				</div>
-				<div class="col-lg-4 col-md-6 col-12">
-					<!-- Single Event -->
-					<div class="single-event">
-						<div class="head overlay">
-							<img src="http://www.herrs.com/NationalSales/images/header/home.jpg" alt="#">
-							<a href="#" class="btn">
-								<i class="fa fa-search"></i>
-							</a>
-						</div>
-						<div class="event-content">
-							<div class="meta">
-								<span>
-									<i class="fa fa-clock-o"></i>6 months</span>
-								<span>
-									<i class="fa fa-user"></i>Beginner</span>
-							</div>
-							<h4>
-								<a href="event-single.html">Make my own Online Shopping Mall</a>
-							</h4>
-							<p>I improved my web programming skills and made a online-shopping mall web site like Amazon.</p>
-							<div class="button">
-								<a href="event-single.html" class="btn">See Project Details</a>
-							</div>
-						</div>
-					</div>
-					<!--/ End Single Event -->
-				</div>
-				<div class="col-lg-4 col-md-6 col-12">
-					<!-- Single Event -->
-					<div class="single-event">
-						<div class="head overlay">
-							<img src="https://rexpo.com/pub/media/catalog/product/cache/1/image/1000x1320/4a4c84ab71692dd54771c9c68502c388/w/g/wg01_1.jpg"
-							 alt="#">
-							<a href="#" class="btn">
-								<i class="fa fa-search"></i>
-							</a>
-						</div>
-						<div class="event-content">
-							<div class="meta">
-								<span>
-									<i class="fa fa-clock-o"></i>3 months</span>
-								<span>
-									<i class="fa fa-user"></i>Intermediate</span>
-							</div>
-							<div class="title">
-								<h4>
-									<a href="event-single.html">Tic-Tac-Toe</a>
-								</h4>
-								<p>I created a tic-tac-toe game in Python 3. Instead of using GUI, I made my program print out the game board like XOX
-									| OXO | OXX</p>
-							</div>
-							<div class="button">
-								<a href="event-single.html" class="btn">See Project Details</a>
-							</div>
-						</div>
-					</div>
-					<!--/ End Single Event -->
-				</div>
-				<div class="col-lg-4 col-md-6 col-12">
-					<!-- Single Event -->
-					<div class="single-event">
-						<div class="head overlay">
-							<img src="http://www.politicsgovernance.com/wp-content/uploads/2018/06/Instagram-launches-new-app-for-long-videos-e1529532094376-500x480.jpg"
-							 alt="#">
-							<a href="#" class="btn">
-								<i class="fa fa-search"></i>
-							</a>
-						</div>
-						<div class="event-content">
-							<div class="meta">
-								<span>
-									<i class="fa fa-clock-o"></i>5 months</span>
-								<span>
-									<i class="fa fa-user"></i>Expert</span>
-							</div>
-							<h4>
-								<a href="event-single.html">Instagram Photo Downloader Bot</a>
-							</h4>
-							<p>I made a Python 3 bot to automatically download Instagram uploaded Gallery photos in a single folder.</p>
-							<div class="button">
-								<a href="event-single.html" class="btn">See Project Details</a>
-							</div>
-						</div>
-					</div>
-					<!--/ End Single Event -->
-				</div>
-				<div class="col-lg-4 col-md-6 col-12">
-					<!-- Single Event -->
-					<div class="single-event">
-						<div class="head overlay">
-							<img src="https://images-na.ssl-images-amazon.com/images/I/51O9Mu8LygL.jpg" alt="#">
-							<a href="#" class="btn">
-								<i class="fa fa-search"></i>
-							</a>
-						</div>
-						<div class="event-content">
-							<div class="meta">
-								<span>
-									<i class="fa fa-clock-o"></i>3 months</span>
-								<span>
-									<i class="fa fa-user"></i>Expert</span>
-							</div>
-							<h4>
-								<a href="event-single.html">Template Maker</a>
-							</h4>
-							<p>I made a web-based-sit which allows the user to enter in various color codes, elements, dimensions and construdted
-								a template file for an application like PHPBB.</p>
-							<div class="button">
-								<a href="event-single.html" class="btn">See Project Details</a>
-							</div>
-						</div>
-					</div>
-					<!--/ End Single Event -->
-				</div>
-				<div class="col-lg-4 col-md-6 col-12">
-					<!-- Single Event -->
-					<div class="single-event">
-						<div class="head overlay">
-							<img src="https://images-na.ssl-images-amazon.com/images/I/41dYbqBfPnL.jpg" alt="#">
-							<a href="#" class="btn">
-								<i class="fa fa-search"></i>
-							</a>
-						</div>
-						<div class="event-content">
-							<div class="meta">
-								<span>
-									<i class="fa fa-clock-o"></i>2 months</span>
-								<span>
-									<i class="fa fa-user"></i>Beginner</span>
-							</div>
-							<div class="title">
-								<h4>
-									<a href="event-single.html">Alarm Clock</a>
-								</h4>
-								<p>Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor incididunt</p>
-							</div>
-							<div class="button">
-								<a href="event-single.html" class="btn">See Project Details</a>
-							</div>
-						</div>
-					</div>
-					<!--/ End Single Event -->
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-12">
-					<!-- Start Pagination -->
-					<div class="pagination-main">
-						<ul class="pagination">
-							<li class="prev">
-								<a href="#">
-									<i class="fa fa-angle-double-left"></i>
-								</a>
-							</li>
-							<li>
-								<a href="#">1</a>
-							</li>
-							<li class="active">
-								<a href="#">2</a>
-							</li>
-							<li>
-								<a href="#">3</a>
-							</li>
-							<li class="next">
-								<a href="#">
-									<i class="fa fa-angle-double-right"></i>
-								</a>
-							</li>
-						</ul>
-					</div>
-					<!--/ End Pagination -->
 				</div>
 			</div>
 		</div>
@@ -564,11 +404,10 @@
 	<script src="js/gmaps.min.js"></script>
 	<!-- Main JS-->
 	<script src="js/main.js"></script>
-	<!-- GitHub contribution graph API -->
-	<script src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js"></script>
-	<script>
-		new GitHubCalendar(".calendar", "MunSeongUk")
-	</script>
+
+	<!-- D3 JS -->
+	<script src="https://d3js.org/d3.v4.min.js"></script>
+	<script src="index.js"></script>
 </body>
 
 </html>
