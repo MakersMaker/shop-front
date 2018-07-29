@@ -29,6 +29,9 @@ You can also:
 
 # Teammates
 ![team](https://user-images.githubusercontent.com/41455064/43364580-d1c143cc-9357-11e8-89bc-addd0da973cb.jpg)
-We are MakersMaker!!
-
-![mun2](https://user-images.githubusercontent.com/41455064/43364667-b1aa5054-9359-11e8-9988-59daed6e7330.png) ![min-seok2](https://user-images.githubusercontent.com/41455064/43364690-164acbce-935a-11e8-9223-ce0b9fe78949.png) ![jy2](https://user-images.githubusercontent.com/41455064/43364691-182d5696-935a-11e8-972c-571da5280f68.png)![alan](https://user-images.githubusercontent.com/41455064/43368721-c355b7ce-939c-11e8-9fd2-e8892ae91d51.png) ![me2](https://user-images.githubusercontent.com/41455064/43364692-19b4b9a0-935a-11e8-9c17-1b6bae638080.png)
+We are MakersMaker!!  
+![mun2](https://user-images.githubusercontent.com/41455064/43364667-b1aa5054-9359-11e8-9988-59daed6e7330.png) 
+![min-seok2](https://user-images.githubusercontent.com/41455064/43364690-164acbce-935a-11e8-9223-ce0b9fe78949.png) 
+![jy2](https://user-images.githubusercontent.com/41455064/43364691-182d5696-935a-11e8-972c-571da5280f68.png)
+![alan](https://user-images.githubusercontent.com/41455064/43368721-c355b7ce-939c-11e8-9fd2-e8892ae91d51.png) 
+![me2](https://user-images.githubusercontent.com/41455064/43364692-19b4b9a0-935a-11e8-9c17-1b6bae638080.png)
