@@ -49,6 +49,50 @@
 
 	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 	<script type="text/javascript">
+		google.charts.load('current', { 'packages': ['gantt'] });
+		google.charts.setOnLoadCallback(drawChart);
+
+		function toMilliseconds(minutes) {
+			return minutes * 60 * 1000;
+		}
+
+		function drawChart() {
+
+			var otherData = new google.visualization.DataTable();
+			otherData.addColumn('string', 'Task ID');
+			otherData.addColumn('string', 'Task Name');
+			otherData.addColumn('string', 'Resource');
+			otherData.addColumn('date', 'Start');
+			otherData.addColumn('date', 'End');
+			otherData.addColumn('number', 'Duration');
+			otherData.addColumn('number', 'Percent Complete');
+			otherData.addColumn('string', 'Dependencies');
+
+			otherData.addRows([
+				['toTrain', 'Sign Up', 'Members', new Date(2018, 2, 1), new Date(2018, 3, 30), null, 100, null],
+				['wait', 'Log-in & Log-out', 'Members', new Date(2018, 4, 1), new Date(2018, 4, 20), null, 100, 'toTrain'],
+				['train', 'Product Purchasement', 'Product', new Date(2018, 4, 21), new Date(2018, 5, 6), null, 100, 'wait'],
+				['toWork', 'Product Management', 'Product', new Date(2018, 5, 7), new Date(2018, 6, 20), null, 100, 'train'],
+				['work', 'Product Searching', 'Product', new Date(2018, 6, 21), new Date(2018, 7, 28), null, 100, 'toWork'],
+
+			]);
+
+			var options = {
+				height: 275,
+				gantt: {
+					defaultStartDateMillis: new Date(2015, 3, 28)
+				}
+			};
+
+			var chart = new google.visualization.Gantt(document.getElementById('chart_div'));
+
+			chart.draw(otherData, options);
+		}
+	</script>
+
+	<!--
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+	<script type="text/javascript">
 		google.charts.load('current', { 'packages': ['corechart'] });
 		google.charts.setOnLoadCallback(drawVisualization);
 
@@ -75,6 +119,7 @@
 			chart.draw(data, options);
 		}
 	</script>
+	-->
 </head>
 
 <body>
@@ -246,7 +291,7 @@
 							</h2>
 							<link href="index.css" rel="stylesheet" <p>An online shopping mall system based on Web using HTML5, CSS, JavaScript and Node.js. Click to see whole code for
 							this project in GitHub.</p>
-							<div id="chart_div" style="width: 900px; height: 500px; margin:auto;"></div>
+							<div id="chart_div"></div>
 							<p align="middle">
 								<a href="https://github.com/MakersMaker/shop-front" target="_blank">
 									<img src="images/Online_Store.png" alt="#">
